@@ -8,3 +8,5 @@ add_action('after_setup_theme', function () {
         'navigation' => __('Navigation'),
     ]);
 });
+
+require get_template_directory() . '/fields/options.php';
