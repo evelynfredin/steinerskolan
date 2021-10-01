@@ -1,5 +1,3 @@
-*
-!.gitignore
-!custom.css
-!script.js
-!img
+app.css
+app.js
+mix-manifest.json
