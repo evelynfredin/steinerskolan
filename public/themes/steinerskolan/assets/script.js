@@ -18,3 +18,24 @@ menuBtn.addEventListener("click", () => {
     menuBtn.innerHTML = openMenu;
   }
 });
+
+// const chevron = document.getElementById("chevron");
+// const start = document.getElementById("start");
+
+// start.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+// chevron.addEventListener("click", () => {
+//   console.log("hi");
+// });
+
+const anchorSelector = 'a[href^="#"]';
+const anchorList = document.querySelectorAll(anchorSelector);
+
+anchorList.forEach((link) => {
+  link.onclick = function (e) {
+    e.preventDefault();
+    const destination = document.querySelector(this.hash);
+    destination.scrollIntoView({
+      behavior: "smooth",
+    });
+  };
+});

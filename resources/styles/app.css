@@ -1,5 +1,39 @@
 @tailwind base;
 @tailwind components;
+
+@font-face {
+  font-family: "Lato";
+  src: url("http://159.89.96.200/wp-content/themes/steinerskolan/assets/fonts/Lato-Black.woff2")
+      format("woff2"),
+    url("http://159.89.96.200/wp-content/themes/steinerskolan/assets/fonts/Lato-Black.woff")
+      format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("http://159.89.96.200/wp-content/themes/steinerskolan/assets/fonts/Lato-Regular.woff2")
+      format("woff2"),
+    url("http://159.89.96.200/wp-content/themes/steinerskolan/assets/fonts/Lato-Regular.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("http://159.89.96.200/wp-content/themes/steinerskolan/assets/fonts/Lato-Bold.woff2")
+      format("woff2"),
+    url("http://159.89.96.200/wp-content/themes/steinerskolan/assets/fonts/Lato-Bold.woff")
+      format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
 @tailwind utilities;
 
 @layer base {
@@ -7,7 +41,8 @@
     @apply text-4xl;
   }
 
-  h2 {
-    @apply text-3xl;
+  .navItem:hover,
+  .active {
+    @apply bg-gray-700 text-white rounded-md;
   }
 }

@@ -10,13 +10,13 @@
     <?php wp_head(); ?>
 </head>
 
-<body class="min-h-screen" <?php body_class(); ?>>
+<body class="min-h-screen font-sans" <?php body_class(); ?>>
 
     <?php wp_body_open(); ?>
 
     <?php $menu = wp_get_nav_menu_items('main'); ?>
 
-    <header class="px-5 lg:flex lg:justify-between items-center mx-auto">
+    <header class="px-5 lg:flex lg:justify-between items-center mx-auto bg-transparent">
         <nav class="flex items-center justify-between h-[80px]">
             <div>
                 <a href="<?= home_url(); ?>">
@@ -40,11 +40,11 @@
 
         <div class="hidden lg:flex lg:h-0 justify-center items-center h-screen" id="menuList">
             <div class="flex flex-col lg:flex-row justify-between items-center overflow-hidden">
-                <ul class="lg:flex lg:space-x-8 lg:border-l lg:border-r py-2 px-8">
+                <ul class="lg:flex lg:space-x-4 lg:border-l lg:border-r py-2 px-8">
                     <?php $activePage = $wp_query->queried_object_id;
                     foreach ($menu as $menuItem) : ?>
                         <li>
-                            <a class="navItem <?= $menuItem->object_id == $activePage ? 'active' : '' ?>" href="<?= $menuItem->url ?>">
+                            <a class="navItem p-3 <?= $menuItem->object_id == $activePage ? 'active' : '' ?>" href="<?= $menuItem->url ?>">
                                 <?= $menuItem->title; ?>
                             </a>
                         </li>
