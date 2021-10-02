@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/index.scss"],"names":[],"mappings":"AAAA;EACE;EACA;EACA;EACA;AACF,C","file":"index.css","sourcesContent":[".impactful {\n  background: rgb(248, 248, 248);\n  padding: 25px;\n  border-radius: 10px;\n  border: 1px solid rgb(233, 231, 231);\n}\n"],"sourceRoot":""}
