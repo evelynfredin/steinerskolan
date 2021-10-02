@@ -97,10 +97,8 @@
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.scss */ "./src/index.scss");
-/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
-/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__);
-
+/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
+/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__);
 
 
 wp.blocks.registerBlockType("yrgonautblocks/impact-text", {
@@ -110,6 +108,12 @@ wp.blocks.registerBlockType("yrgonautblocks/impact-text", {
   attributes: {
     showImpactText: {
       type: "string"
+    }
+  },
+  description: "A simple text block ideal for short paragraphs that attract the eye.",
+  example: {
+    attributes: {
+      showImpactText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet non purus sed blandit."
     }
   },
   edit: EditComponent,
@@ -125,39 +129,28 @@ function EditComponent(props) {
     });
   }
 
-  return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
-    className: "impactful"
-  }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__["TextControl"], {
-    label: "Write something impactful!",
+  return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("section", {
+    class: "py-32"
+  }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
+    class: "px-10 md:px-0 md:w-3/6 mx-auto"
+  }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("h3", {
+    class: "text-center text-2xl impactText"
+  }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__["RichText"], {
     value: props.attributes.showImpactText,
     onChange: updateImpactText
-  }));
+  }))));
 }
 
 /***/ }),
 
-/***/ "./src/index.scss":
-/*!************************!*\
-  !*** ./src/index.scss ***!
-  \************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
-
-/***/ }),
-
-/***/ "@wordpress/components":
-/*!************************************!*\
-  !*** external ["wp","components"] ***!
-  \************************************/
+/***/ "@wordpress/block-editor":
+/*!*************************************!*\
+  !*** external ["wp","blockEditor"] ***!
+  \*************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-(function() { module.exports = window["wp"]["components"]; }());
+(function() { module.exports = window["wp"]["blockEditor"]; }());
 
 /***/ }),
 
