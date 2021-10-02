@@ -1,5 +1,4 @@
-import "./index.scss";
-import { TextControl } from "@wordpress/components";
+import { RichText } from "@wordpress/block-editor";
 
 wp.blocks.registerBlockType("yrgonautblocks/impact-text", {
   title: "Impact Text",
@@ -7,6 +6,14 @@ wp.blocks.registerBlockType("yrgonautblocks/impact-text", {
   category: "common",
   attributes: {
     showImpactText: { type: "string" },
+  },
+  description:
+    "A simple text block ideal for short paragraphs that attract the eye.",
+  example: {
+    attributes: {
+      showImpactText:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet non purus sed blandit.",
+    },
   },
   edit: EditComponent,
   save: function (props) {
@@ -20,12 +27,15 @@ function EditComponent(props) {
   }
 
   return (
-    <div className="impactful">
-      <TextControl
-        label="Write something impactful!"
-        value={props.attributes.showImpactText}
-        onChange={updateImpactText}
-      />
-    </div>
+    <section className="py-32">
+      <div className="px-10 md:px-0 md:w-3/6 mx-auto">
+        <h3 className="text-center text-2xl impactText">
+          <RichText
+            value={props.attributes.showImpactText}
+            onChange={updateImpactText}
+          />
+        </h3>
+      </div>
+    </section>
   );
 }

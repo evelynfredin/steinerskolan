@@ -1,8 +1,8 @@
 {
-  "name": "impact-text",
+  "name": "impact-image",
   "version": "1.0.0",
   "description": "",
-  "main": "src/index.js",
+  "main": "index.js",
   "scripts": {
     "build": "wp-scripts build src/index.js src/save.js",
     "start": "wp-scripts start src/index.js src/save.js"
@@ -11,6 +11,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@wordpress/scripts": "^15.0.1"
+    "@wordpress/scripts": "^18.0.1"
   }
 }

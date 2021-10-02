@@ -1,7 +1,7 @@
 const { fontFamily } = require("tailwindcss/defaultTheme");
 
 module.exports = {
-  purge: ["./**/*.php"],
+  purge: ["./**/*.php", "./**/save.js"],
   mode: "jit",
   darkMode: false, // or 'media' or 'class'
   theme: {

@@ -4,6 +4,8 @@ mu-plugins/*
 plugins/*
 !plugins/index.php
 !plugins/impact-text
+!plugins/impact-image
+!plugins/impact-image-wrapper
 upgrade
 uploads
 wordpress
