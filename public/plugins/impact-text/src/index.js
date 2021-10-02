@@ -27,9 +27,9 @@ function EditComponent(props) {
   }
 
   return (
-    <section class="py-32">
-      <div class="px-10 md:px-0 md:w-3/6 mx-auto">
-        <h3 class="text-center text-2xl impactText">
+    <section className="py-32">
+      <div className="px-10 md:px-0 md:w-3/6 mx-auto">
+        <h3 className="text-center text-2xl impactText">
           <RichText
             value={props.attributes.showImpactText}
             onChange={updateImpactText}
