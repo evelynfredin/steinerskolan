@@ -15,4 +15,9 @@ add_action('wp_enqueue_scripts', function () {
     wp_enqueue_script('script', get_theme_file_uri('assets/app.js'));
 });
 
+// Custom fields
 require get_template_directory() . '/fields/options.php';
+require get_template_directory() . '/fields/alumni-fields.php';
+
+// Custom post-types
+require get_template_directory() . '/post-types/alumni.php';
