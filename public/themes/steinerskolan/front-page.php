@@ -27,9 +27,8 @@
     <?php if (have_posts()) : ?>
 
         <?php while (have_posts()) : the_post(); ?>
-            <section class="container mx-auto">
-                <?php the_content(); ?>
-            </section>
+
+            <?php the_content(); ?>
 
         <?php endwhile; ?>
 
