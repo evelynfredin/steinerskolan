@@ -21,3 +21,4 @@ require get_template_directory() . '/fields/alumni-fields.php';
 
 // Custom post-types
 require get_template_directory() . '/post-types/alumni.php';
+require get_template_directory() . '/blocks/alumni-testimonial.php';
