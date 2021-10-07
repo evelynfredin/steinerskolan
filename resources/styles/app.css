@@ -73,4 +73,24 @@
   .contrastBlock p {
     @apply text-xl;
   }
+
+  .videoBlock {
+    @apply flex flex-col lg:flex-row px-5 justify-center items-center my-32 container mx-auto;
+  }
+
+  .videoBlock > div {
+    @apply flex justify-center px-0 mx-0;
+  }
+
+  .salmonSeparator {
+    @apply px-5 container mx-auto;
+  }
+
+  .iconBlock {
+    @apply flex flex-col md:flex-row justify-between items-center text-highlight font-bold text-2xl w-full md:w-2/3 mx-auto my-32 h-auto space-y-20 md:space-y-0;
+  }
+
+  .iconBlock > a > div {
+    @apply flex flex-col items-center justify-center h-auto space-y-3;
+  }
 }

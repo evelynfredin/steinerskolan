@@ -9,6 +9,9 @@ module.exports = {
       fontFamily: {
         sans: ["Lota Grotesque", ...fontFamily.sans],
       },
+      colors: {
+        highlight: "#D5866D",
+      },
     },
   },
   variants: {

@@ -10,7 +10,7 @@
     <?php wp_head(); ?>
 </head>
 
-<body class="min-h-screen font-sans" <?php body_class(); ?>>
+<body class="min-h-screen font-sans bg-[#F8F4ED]" <?php body_class(); ?>>
 
     <?php wp_body_open(); ?>
 
