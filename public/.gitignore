@@ -6,6 +6,7 @@ plugins/*
 !plugins/impact-text
 !plugins/impact-image
 !plugins/impact-image-wrapper
+!plugins/quick-icons
 upgrade
 uploads
 wordpress
