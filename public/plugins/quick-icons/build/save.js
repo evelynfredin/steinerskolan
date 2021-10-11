@@ -129,17 +129,17 @@ function IconBlock() {
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
     href: "#"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
-    src: "http://localhost:8000/uploads/2021/10/location.svg",
+    src: "http://159.89.96.200/wp-content/uploads/2021/10/location.svg",
     alt: "Hitta hit"
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, "Hitta hit"))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
     href: "#"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
-    src: "http://localhost:8000/uploads/2021/10/calendar.svg",
+    src: "http://159.89.96.200/wp-content/uploads/2021/10/calendar.svg",
     alt: "Kalendarium"
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, "Kalendarium"))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
     href: "#"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
-    src: "http://localhost:8000/uploads/2021/10/idunsoft.svg",
+    src: "http://159.89.96.200/wp-content/uploads/2021/10/idunsoft.svg",
     alt: "Idunsoft"
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, "Idunsoft"))));
 }
