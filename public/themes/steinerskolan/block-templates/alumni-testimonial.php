@@ -17,31 +17,40 @@ $alumni = get_posts([
 
 ?>
 
-<section class="hidden my-32 h-full md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 container mx-auto gap-5">
-    <?php foreach ($alumni as $alumnus) : ?>
-        <div>
-            <?= get_the_post_thumbnail($alumnus); ?>
-            <div class="-mt-20 md:-mt-32 sm:-mt-40">
-                <div class="bg-gray-300 mx-5 px-8 py-6 relative">
-                    <h3 class="text-2xl font-bold"><?= get_the_title($alumnus); ?></h3>
-                    <small><?php the_field('alumnus_occupation', $alumnus) ?></small>
-                    <p class="mt-5"><?= get_the_excerpt($alumnus) ?></p>
+<section class="hidden my-32 container mx-auto md:block">
+    <h3 class="font-bold text-2xl text-schoolGreen my-10 text-center">Läs om tidigare elever</h3>
+    <div class="h-full md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+        <?php foreach ($alumni as $alumnus) : ?>
+            <div>
+                <?= get_the_post_thumbnail($alumnus); ?>
+
+                <div class=" -mt-20 md:-mt-32 sm:-mt-40">
+                    <div class="bg-gray-300 mx-5 px-8 py-6 relative shadow-lg rounded-md">
+                        <h3 class="text-2xl font-bold"><?= get_the_title($alumnus); ?></h3>
+                        <small><?php the_field('alumnus_occupation', $alumnus) ?></small>
+                        <p class="mt-5"><?= get_the_excerpt($alumnus) ?></p>
+                    </div>
                 </div>
             </div>
-        </div>
-    <?php endforeach; ?>
+
+        <?php endforeach; ?>
+    </div>
 </section>
 
 <section class="block my-32 md:hidden container mx-auto">
+    <h3 class="font-bold text-2xl text-schoolGreen my-10 text-center">Läs om tidigare elever</h3>
     <div class="carousel">
         <div class="carousel-inner">
-            <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+
+            <input class="carousel-open" type="radio" id="<?= $alumnus->ID ?>" name="carousel" aria-hidden="true" hidden="" checked="checked">
+
             <?php foreach ($alumni as $alumnus) : ?>
+
                 <div class="carousel-item">
                     <div>
                         <?= get_the_post_thumbnail($alumnus); ?>
                         <div class="-mt-20 md:-mt-32 sm:-mt-40">
-                            <div class="bg-gray-300 mx-5 px-8 py-6 relative">
+                            <div class="bg-gray-300 mx-5 px-8 py-6 relative shadow-lg rounded-md">
                                 <h3 class="text-2xl font-bold"><?= get_the_title($alumnus); ?></h3>
                                 <small><?php the_field('alumnus_occupation', $alumnus) ?></small>
                                 <p class="mt-5"><?= get_the_excerpt($alumnus) ?></p>
@@ -49,13 +58,9 @@ $alumni = get_posts([
                         </div>
                     </div>
                 </div>
-                <label for="carousel-3" class="carousel-control prev control-1">‹</label>
-                <label for="carousel-2" class="carousel-control next control-1">›</label>
-                <label for="carousel-1" class="carousel-control prev control-2">‹</label>
-                <label for="carousel-3" class="carousel-control next control-2">›</label>
-                <label for="carousel-2" class="carousel-control prev control-3">‹</label>
-                <label for="carousel-1" class="carousel-control next control-3">›</label>
+
             <?php endforeach; ?>
+
         </div>
     </div>
 </section>

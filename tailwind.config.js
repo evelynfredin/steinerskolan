@@ -11,6 +11,7 @@ module.exports = {
       },
       colors: {
         highlight: "#D5866D",
+        schoolGreen: "#0F3A00",
       },
     },
   },
