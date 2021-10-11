@@ -12,6 +12,9 @@ module.exports = {
       colors: {
         highlight: "#D5866D",
       },
+      backgroundImage: {
+        "footer-bg": "url('/themes/steinerskolan/assets/img/footer-bg.png')",
+      },
     },
   },
   variants: {
