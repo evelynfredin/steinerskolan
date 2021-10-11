@@ -132,7 +132,7 @@ if (function_exists('acf_add_local_field_group')) {
                 'key' => 'details_1',
                 'name' => 'details_1',
                 'label' => 'Details 1',
-                'type' => 'textarea',
+                'type' => 'wysiwyg',
                 'instructions' => 'Add information for subheader 1',
                 
             ],
@@ -140,7 +140,7 @@ if (function_exists('acf_add_local_field_group')) {
                 'key' => 'details_2',
                 'name' => 'details_2',
                 'label' => 'Details 2',
-                'type' => 'textarea',
+                'type' => 'wysiwyg',
                 'instructions' => 'Add information for subheader 2',
                 
             ],
