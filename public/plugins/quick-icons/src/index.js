@@ -27,21 +27,21 @@ function EditComponent(props) {
     <section className="flex justify-between">
       <div>
         <img
-          src="http://localhost:8000/uploads/2021/10/location.svg"
+          src="http://159.89.96.200/wp-content/uploads/2021/10/location.svg"
           alt="Hitta hit"
         />
         <p>Hitta hit</p>
       </div>
       <div>
         <img
-          src="http://localhost:8000/uploads/2021/10/calendar.svg"
+          src="http://159.89.96.200/wp-content/uploads/2021/10/calendar.svg"
           alt="Kalendarium"
         />
         <p>Kalendarium</p>
       </div>
       <div>
         <img
-          src="http://localhost:8000/uploads/2021/10/idunsoft.svg"
+          src="http://159.89.96.200/wp-content/uploads/2021/10/idunsoft.svg"
           alt="Idunsoft"
         />
         <p>Idunsoft</p>

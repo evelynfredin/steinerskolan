@@ -27,7 +27,7 @@
   }
 
   .threeImgBlock {
-    @apply flex flex-col md:flex-row container mx-auto space-x-0 space-y-10 px-14 md:px-0 md:space-x-10 md:space-y-0;
+    @apply flex flex-col md:flex-row md:container md:mx-auto space-x-0 space-y-32 px-14 md:px-0 md:space-x-10 md:space-y-0;
   }
 
   .contrastBlock {
