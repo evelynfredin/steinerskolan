@@ -114,3 +114,7 @@
 .wp-block-column {
   margin-left: 0 !important;
 }
+
+.secondary-button-position {
+  left: calc(50% - 133.5px);
+}
