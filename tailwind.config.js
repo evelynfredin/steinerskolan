@@ -10,18 +10,21 @@ module.exports = {
         sans: "'Lato'",
       },
       colors: {
-        highlight: "#D5866D",
+        highlight: "#594978",
         schoolGreen: "#0F3A00",
         contrast: "#F8F4ED",
         schoolRed: "#821F00",
+        softGreen: "#D7EAD8",
       },
       backgroundImage: {
         "footer-bg":
           "url('http://159.89.96.200/wp-content/themes/steinerskolan/assets/img/footer-bg.png')",
         mainBtn:
-          "url('http://159.89.96.200/wp-content/themes/steinerskolan/assets/img/mainBtnImg.svg')",
+          "url('http://159.89.96.200/wp-content/themes/steinerskolan/assets/img/mainBtn.svg')",
         secondaryBtn:
           "url('http://159.89.96.200/wp-content/themes/steinerskolan/assets/img/secondaryBtn.svg')",
+        menuOverlay:
+          "url('http://159.89.96.200/wp-content/themes/steinerskolan/assets/img/menuOverlay.png')",
       },
     },
   },

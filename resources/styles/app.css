@@ -23,7 +23,7 @@
 
   .navItem:hover,
   .active {
-    @apply bg-gray-700 text-white rounded-md;
+    @apply bg-[#3B3B3B] text-white rounded-md;
   }
 
   .threeImgBlock {
@@ -47,7 +47,7 @@
   }
 
   .videoBlock > div {
-    @apply flex justify-center px-0 mx-0;
+    @apply flex justify-center px-0 mx-0 w-full;
   }
 
   .salmonSeparator {
@@ -60,5 +60,9 @@
 
   .iconBlock > a > div {
     @apply flex flex-col items-center justify-center h-auto space-y-3;
+  }
+
+  .vimeoVideo {
+    @apply w-full;
   }
 }

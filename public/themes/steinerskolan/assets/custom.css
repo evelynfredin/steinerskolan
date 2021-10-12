@@ -8,11 +8,10 @@
 }
 
 .welcome {
-  height: calc(100vh - 80px);
+  height: calc(100vh - 100px);
   /* background-image: url(http://159.89.96.200/wp-content/uploads/2021/09/hero.jpg); */
   /* background-size: cover;
   background-position: top; */
-  background-color: #047a3b;
 }
 
 .waldorf {
