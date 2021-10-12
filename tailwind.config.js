@@ -14,7 +14,8 @@ module.exports = {
         schoolGreen: "#0F3A00",
       },
       backgroundImage: {
-        "footer-bg": "url('/themes/steinerskolan/assets/img/footer-bg.png')",
+        "footer-bg":
+          "url('http://159.89.96.200/wp-content/themes/steinerskolan/assets/img/footer-bg.png')",
       },
     },
   },
