@@ -9,8 +9,10 @@
                     <p class="text-2xl font-black md:text-4xl mb-8"><?php the_field('hero_heading', 'option'); ?></p>
                 <?php endif; ?>
 
-                <a class="bg-gray-600 rounded-2xl px-7 py-3 text-white text-lg font-bold" href="<?php the_field('hero_content_button_link', 'option'); ?>" rel="noopener noreferrer">
-                    <?php the_field('hero_content_button_text', 'option'); ?>
+                <a href="<?php the_field('hero_content_button_link', 'option'); ?>" rel="noopener noreferrer">
+                    <div class="bg-mainBtn w-[172px] h-[64px] flex justify-center items-center text-schoolGreen waldorf text-2xl">
+                        <?php the_field('hero_content_button_text', 'option'); ?>
+                    </div>
                 </a>
             </div>
 
