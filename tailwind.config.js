@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Lota Grotesque", ...fontFamily.sans],
+        sans: "'Lato'",
       },
       colors: {
         highlight: "#D5866D",
@@ -16,6 +16,8 @@ module.exports = {
       backgroundImage: {
         "footer-bg":
           "url('http://159.89.96.200/wp-content/themes/steinerskolan/assets/img/footer-bg.png')",
+        mainBtn:
+          "url('http://159.89.96.200/wp-content/themes/steinerskolan/assets/img/mainBtnImg.svg')",
       },
     },
   },
