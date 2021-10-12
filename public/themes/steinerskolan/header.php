@@ -17,10 +17,10 @@
     <?php $menu = wp_get_nav_menu_items('main'); ?>
 
     <header class="px-5 lg:flex lg:justify-between items-center mx-auto bg-transparent">
-        <nav class="flex items-center justify-between h-[80px]">
+        <nav class="flex items-center justify-between h-[100px]">
             <div>
                 <a href="<?= home_url(); ?>">
-                    <img src="<?php the_field('site_logo', 'option') ?>" alt="Rudolf Steinerskolan" class="md:h-[55px] h-[40px] w-auto">
+                    <img src="<?php the_field('site_logo', 'option') ?>" alt="Rudolf Steinerskolan" class="h-[80px] w-auto">
                 </a>
             </div>
             <div class="flex space-x-8">
