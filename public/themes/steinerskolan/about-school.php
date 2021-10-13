@@ -27,13 +27,13 @@ if ( $arr_posts->have_posts() ) :
        <div class="flex justify-center items-center w-screen relative overflow-x-hidden mb-24">
            
        <a href="<?php the_permalink(); ?>">
-       <article class="pb-10 max-w-3xl" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+       <article class="pb-10 max-w-[720px]" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
             <?php
             if ( has_post_thumbnail() ) :
                 the_post_thumbnail();
             endif;
             ?>
-            <div class="absolute bottom-1 bg-secondaryBtn secondary-button-position flex justify-center w-[267px] h-[64px]"><p class="py-3 text-schoolRed waldorf text-center text-2xl font-bold"><?php the_title(); ?></p></div>
+            <div class="absolute bottom-1 bg-secondaryBtn secondary-button-position flex justify-center w-[267px] h-[64px]"><p class="py-3 text-lighterGreen waldorf text-center text-2xl font-bold"><?php the_title(); ?></p></div>
      
             
                </a>
