@@ -1,12 +1,71 @@
-/**
- * The following styles get applied both on the front of your site
- * and in the editor.
- *
- * Replace them with your own styles or remove the file completely.
- */
+.center {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
 
-.wp-block-create-block-image-cover-block {
-	background-color: #21759b;
-	color: #fff;
-	padding: 2px;
+.body-container {
+	border: #0f3a00 2px;
+}
+
+.body {
+	font-size: 1.25rem;
+	color: #0f3a00;
+}
+main {
+	width: screen;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	max-width: 375px;
+}
+
+.title {
+	color: #0f3a00;
+	font-size: 36px;
+	z-index: 2;
+}
+.thumbnail {
+	position: relative;
+	border: #0f3a00 2px;
+	width: 375px;
+	height: 256px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	img {
+		object-fit: contain;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+	}
+}
+
+.arrow {
+	height: 50px;
+	width: 50px;
+	color: #0f3a00;
+	cursor: pointer;
+	position: absolute;
+	left: calc(50% - 25px);
+	bottom: 0;
+}
+
+@media only screen and (min-width: 760px) {
+	main {
+		margin: 2vw 10px;
+	}
+}
+
+@media only screen and (min-width: 1300px) {
 }

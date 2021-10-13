@@ -1,7 +1,7 @@
 import { registerBlockType } from "@wordpress/blocks";
 
 import { MediaUpload, PlainText, RichText } from "@wordpress/block-editor";
-import { Button } from "@wordpress/components";
+import { Button, ToggleControl } from "@wordpress/components";
 import "./style.scss";
 
 import Edit from "./edit";
@@ -21,9 +21,7 @@ registerBlockType("create-block/image-cover-block", {
 		body: {
 			type: "string",
 		},
-		visible: {
-			default: false,
-		},
+		visible: false,
 	},
 	edit({ attributes, setAttributes }) {
 		const { title, image, body } = attributes;
@@ -38,15 +36,9 @@ registerBlockType("create-block/image-cover-block", {
 			setAttributes({ image: newImage.sizes.full.url });
 		}
 
-		function updateVisibility(visibility) {
-			if (visibility === true) {
-				setAttributes({ visible: false });
-			} else setAttributes({ visible: true });
-		}
-
 		function getImageButton(openEvent) {
 			if (image) {
-				return <img src={image} onClick={openEvent} />;
+				return <img className="thumbnail" src={image} onClick={openEvent} />;
 			} else {
 				return (
 					<div>
@@ -57,16 +49,8 @@ registerBlockType("create-block/image-cover-block", {
 		}
 
 		return (
-			<div>
-				<div
-					class=""
-					style={{
-						backgroundImage: `url(${image})`,
-						backgroundSize: "cover",
-						backgroundPosition: "center",
-						backgroundRepeat: "no-repeat",
-					}}
-				>
+			<div className="center">
+				<div className="">
 					<MediaUpload
 						onSelect={updateImage}
 						type="image"
@@ -74,6 +58,7 @@ registerBlockType("create-block/image-cover-block", {
 						render={({ open }) => getImageButton(open)}
 					/>
 					<PlainText
+						className="waldorf"
 						placeholder="Add your title"
 						value={title}
 						onChange={updateTitle}
@@ -81,6 +66,7 @@ registerBlockType("create-block/image-cover-block", {
 				</div>
 
 				<RichText
+					className="body"
 					placeholder="Add your description"
 					tagName="p"
 					value={body}
@@ -94,41 +80,32 @@ registerBlockType("create-block/image-cover-block", {
 		const { title, image, body, visible } = attributes;
 
 		return (
-			<div className="m-h-[256px] flex w-full m-w-[375px] flex-wrap">
-				<div
-					className=" h-[256px] w-full flex justify-center items-center relative "
-					style={{
-						backgroundImage: `url(${image})`,
-						backgroundSize: "cover",
-						backgroundPosition: "center",
-						backgroundRepeat: "no-repeat",
-					}}
-				>
-					<h2 className="waldorf text-schoolGreen text-4xl">{title}</h2>
-					<svg
-						onClick={updateVisibility}
-						xmlns="http://www.w3.org/2000/svg"
-						style={{ left: "calc(50% - 6px)" }}
-						className="h-12 w-12 text-schoolGreen stroke-current cursor-pointer animate-bounce hover:animate-none absolute"
-						fill="none"
-						viewBox="0 0 24 24"
-						stroke="currentColor"
-						id="chevron"
-					>
-						<path
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							stroke-width="2"
-							d="M19 9l-7 7-7-7"
-						/>
-					</svg>
+			<main>
+				<div className="container">
+					<div className="thumbnail">
+						<img src={image} />
+						<h2 className="title waldorf">{title}</h2>
+
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							className="arrow"
+							stroke="currentColor"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M19 9l-7 7-7-7"
+							/>
+						</svg>
+					</div>
+					<div className={` "body-container" ${visible ? "block" : "hidden"}`}>
+						<RichText.Content className="body" tagName="p" value={body} />
+					</div>
 				</div>
-				<RichText.Content
-					className={visible ? "block" : "hidden"}
-					tagName="p"
-					value={body}
-				/>
-			</div>
+			</main>
 		);
 	},
 });

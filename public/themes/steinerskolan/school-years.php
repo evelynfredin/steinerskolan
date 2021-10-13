@@ -13,7 +13,9 @@ get_header(); ?>
 
 <?php while (have_posts()) : the_post(); ?>
 
+<div class=" m-auto grid md:grid-cols-2 xl:grid-cols-3 max-w-[1250px] ">
     <?php the_content(); ?>
+</div>
 
 <?php endwhile; ?>
 

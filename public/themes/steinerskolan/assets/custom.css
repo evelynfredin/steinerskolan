@@ -114,3 +114,10 @@
 .secondary-button-position {
   left: calc(50% - 133.5px);
 }
+
+.object-cover img {
+  object-fit: cover;
+}
+.excerpt ~ p {
+  margin-bottom: 1rem;
+}
