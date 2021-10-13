@@ -12,15 +12,17 @@ divsToUpdate.forEach(function (div) {
 function FoodBlock() {
   return (
     <section className="foodBlock bg-softGreen py-[150px]">
-      <div className="container mx-auto px-10 lg:px-0">
-        <div className="flex flex-col lg:flex-row lg:space-x-[130px] items-center space-y-14 lg:space-y-0">
-          <img
-            src="http://159.89.96.200/wp-content/uploads/2021/10/Mat-1.png"
-            alt="Mat på Rudolf Steinerskolan"
-            className="max-w-[480px] h-auto min-w-[230px]"
-          />
-          <div>
-            <h3 className="text-4xl text-schoolGreen">Skolköket</h3>
+      <div className="container mx-auto px-10">
+        <div className="flex flex-col lg:flex-row items-center gap-0 md:gap-14 space-y-14 lg:space-y-0">
+          <div className="w-full lg:w-1/2 flex justify-center lg:justify-start">
+            <img
+              src="http://159.89.96.200/wp-content/uploads/2021/10/Mat-1.png"
+              alt="Mat på Rudolf Steinerskolan"
+              className="w-full h-auto lg:w-[490px]"
+            />
+          </div>
+          <div className="w-full lg:w-1/2">
+            <h3 className="text-4xl text-schoolGreen mb-12">Skolköket</h3>
             <div className="text-anotherGreen text-xl space-y-5">
               <p>
                 I skolköket på Rudolf Steinerskolan ska det lagas god,
@@ -43,6 +45,41 @@ function FoodBlock() {
                 verksamhet och har som mål att se till allas behov, även de med
                 specilkost.
               </p>
+              <div className="flex justify-end font-black uppercase text-base">
+                <p className="inline-flex">
+                  Läs mer om köket här
+                  <span className="inline-flex ml-4">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-6"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M14 5l7 7m0 0l-7 7m7-7H3"
+                      />
+                    </svg>
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex flex-col lg:flex-row items-center gap-0 md:gap-14 space-y-14 lg:space-y-0 mt-24">
+          <div className="w-full lg:w-1/2 self-end order-last mt-24 lg:mt-0 lg:order-none">
+            <div className="text-anotherGreen text-xl">
+              <p className="mb-16">
+                Vi prioriterar biodynamisk odling och låter barnen vara
+                delaktiga i processen. Målet är att laga enkel, god och
+                näringsriktig mat så att eleverna på Rudolf Steinerskolan,
+                förskolan och fritids känner sig både mätta och nöjda efter
+                skollunch och mellanmål.
+              </p>
               <div className="flex justify-center">
                 <a href="#">
                   <div className="bg-thirdBtn flex justify-center w-[267px] h-[64px]">
@@ -53,6 +90,13 @@ function FoodBlock() {
                 </a>
               </div>
             </div>
+          </div>
+          <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
+            <img
+              src="http://localhost:8000/uploads/2021/10/mat3.png"
+              alt="Mat på Rudolf Steinerskolan"
+              className="w-full h-auto lg:w-[580px]"
+            />
           </div>
         </div>
       </div>
