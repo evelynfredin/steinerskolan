@@ -15,6 +15,9 @@ wp.blocks.registerBlockType("yrgonautblocks/impact-image", {
     title: {
       type: "string",
     },
+    path: {
+      type: "url",
+    },
   },
   edit: EditComponent,
   save: function (props) {
@@ -39,7 +42,10 @@ function EditComponent({ attributes, setAttributes }) {
     <div className="relative">
       <MediaUpload
         onSelect={(media) => {
-          setAttributes({ imageAlt: media.alt, imageUrl: media.url });
+          setAttributes({
+            imageAlt: media.alt,
+            imageUrl: media.url,
+          });
         }}
         type="image"
         value={attributes.imageID}
@@ -50,6 +56,13 @@ function EditComponent({ attributes, setAttributes }) {
         value={attributes.title}
         tagName="h2"
         placeholder="Your card title"
+        className="absolute top-2/3 py-3 text-white text-center bg-gray-600 w-full text-2xl font-bold"
+      />
+      <PlainText
+        onChange={(hyperLink) => setAttributes({ path: hyperLink })}
+        value={attributes.path}
+        tagName="h2"
+        placeholder="Add a link to your card"
         className="absolute top-2/3 py-3 text-white text-center bg-gray-600 w-full text-2xl font-bold"
       />
     </div>

@@ -43,7 +43,7 @@ $alumni = get_posts([
             <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
             <div class="carousel-item">
                 <div>
-                    <img src="http://159.89.96.200/wp-content/uploads/2021/10/alumni01.jpg" alt="">
+                    <img src="http://159.89.96.200/wp-content/uploads/2021/10/alumni01.jpg" alt="John Doe pluggade på Rudolf Steinerskolan" class="lazyload">
                     <div class="-mt-20 md:-mt-32 sm:-mt-40">
                         <div class="bg-softGreen text-schoolGreen mx-5 px-8 py-6 relative">
                             <h3 class="text-2xl font-bold">John Doe</h3>
@@ -56,7 +56,7 @@ $alumni = get_posts([
             <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
             <div class="carousel-item">
                 <div>
-                    <img src="http://159.89.96.200/wp-content/uploads/2021/10/alumni02.jpg" alt="">
+                    <img src="http://159.89.96.200/wp-content/uploads/2021/10/alumni02.jpg" alt="Jane Doe pluggade på Rudolf Steinerskolan" class="lazyload">
                     <div class="-mt-20 md:-mt-32 sm:-mt-40">
                         <div class="bg-softGreen text-schoolGreen mx-5 px-8 py-6 relative">
                             <h3 class="text-2xl font-bold">Jane Doe</h3>
@@ -69,7 +69,7 @@ $alumni = get_posts([
             <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
             <div class="carousel-item">
                 <div>
-                    <img src="http://159.89.96.200/wp-content/uploads/2021/10/alumni04.jpg" alt="">
+                    <img src="http://159.89.96.200/wp-content/uploads/2021/10/alumni04.jpg" alt="Bruce Wayne pluggade på Rudolf Steinerskolan" class="lazyload">
                     <div class="-mt-20 md:-mt-32 sm:-mt-40">
                         <div class="bg-softGreen text-schoolGreen mx-5 px-8 py-6 relative">
                             <h3 class="text-2xl font-bold">Bruce Wayne</h3>
@@ -79,19 +79,7 @@ $alumni = get_posts([
                     </div>
                 </div>
             </div>
-            <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
-            <div class="carousel-item">
-                <div>
-                    <img src="http://159.89.96.200/wp-content/uploads/2021/10/alumni03.jpg" alt="">
-                    <div class="-mt-20 md:-mt-32 sm:-mt-40">
-                        <div class="bg-softGreen text-schoolGreen mx-5 px-8 py-6 relative">
-                            <h3 class="text-2xl font-bold">Carmen Sandiego</h3>
-                            <small>Engineer at NASA</small>
-                            <p class="mt-5">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus sed suscipit felis, et ullamcorper tellus. Maecenas ac magna feugiat, vulputate mi non, dapibus augue. Suspendisse sed erat accumsan, ultricies massa vitae, tempor ante.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
             <label for="carousel-3" class="carousel-control prev control-1">‹</label>
             <label for="carousel-2" class="carousel-control next control-1">›</label>
             <label for="carousel-1" class="carousel-control prev control-2">‹</label>

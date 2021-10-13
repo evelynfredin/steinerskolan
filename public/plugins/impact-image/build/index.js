@@ -129,6 +129,9 @@ wp.blocks.registerBlockType("yrgonautblocks/impact-image", {
     },
     title: {
       type: "string"
+    },
+    path: {
+      type: "url"
     }
   },
   edit: EditComponent,
@@ -178,6 +181,16 @@ function EditComponent(_ref) {
     value: attributes.title,
     tagName: "h2",
     placeholder: "Your card title",
+    className: "absolute top-2/3 py-3 text-white text-center bg-gray-600 w-full text-2xl font-bold"
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.PlainText, {
+    onChange: function onChange(hyperLink) {
+      return setAttributes({
+        path: hyperLink
+      });
+    },
+    value: attributes.path,
+    tagName: "h2",
+    placeholder: "Add a link to your card",
     className: "absolute top-2/3 py-3 text-white text-center bg-gray-600 w-full text-2xl font-bold"
   }));
 }

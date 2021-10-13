@@ -19,14 +19,6 @@ menuBtn.addEventListener("click", () => {
   }
 });
 
-// const chevron = document.getElementById("chevron");
-// const start = document.getElementById("start");
-
-// start.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
-// chevron.addEventListener("click", () => {
-//   console.log("hi");
-// });
-
 const anchorSelector = 'a[href^="#"]';
 const anchorList = document.querySelectorAll(anchorSelector);
 

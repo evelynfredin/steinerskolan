@@ -4,7 +4,6 @@
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="<?= get_theme_file_uri('assets/app.css') ?>">
     <link rel="stylesheet" href="<?= get_theme_file_uri('assets/custom.css') ?>">
 
     <?php wp_head(); ?>
@@ -20,7 +19,7 @@
         <nav class="flex items-center justify-between h-[100px]">
             <div class="pl-5">
                 <a href="<?= home_url(); ?>">
-                    <img src="<?php the_field('site_logo', 'option') ?>" alt="Rudolf Steinerskolan" class="h-[75px] w-auto">
+                    <img src="<?php the_field('site_logo', 'option') ?>" alt="Rudolf Steinerskolan" class="h-[75px] w-auto lazyload">
                 </a>
             </div>
             <div class="flex space-x-8 pr-5">

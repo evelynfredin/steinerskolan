@@ -126,10 +126,14 @@ divsToUpdate.forEach(function (div) {
 function ImgBlock(props) {
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "relative flex justify-center w-full"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
+    href: props.path,
+    "aria-label": "L\xE4s mer om ".concat(props.title),
+    title: "L\xE4s mer om ".concat(props.title)
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
     src: props.imageUrl,
     alt: props.imageAlt
-  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "absolute -bottom-10 bg-secondaryBtn flex justify-center w-[267px] h-[64px]"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
     className: "py-3 text-lighterGreen waldorf text-center text-2xl font-bold"
