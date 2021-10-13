@@ -12,7 +12,13 @@ divsToUpdate.forEach(function (div) {
 function ImgBlock(props) {
   return (
     <div className="relative flex justify-center w-full">
-      <img src={props.imageUrl} alt={props.imageAlt} />
+      <a
+        href={props.path}
+        aria-label={`Läs mer om ${props.title}`}
+        title={`Läs mer om ${props.title}`}
+      >
+        <img src={props.imageUrl} alt={props.imageAlt} />
+      </a>
       <div className="absolute -bottom-10 bg-secondaryBtn flex justify-center w-[267px] h-[64px]">
         <p className="py-3 text-lighterGreen waldorf text-center text-2xl font-bold">
           {props.title}

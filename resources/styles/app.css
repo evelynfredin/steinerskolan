@@ -55,7 +55,7 @@
   }
 
   .iconBlock {
-    @apply flex flex-col md:flex-row justify-between items-center text-highlight font-bold text-2xl w-full md:w-2/3 mx-auto my-32 h-auto space-y-20 md:space-y-0;
+    @apply flex flex-col md:flex-row justify-between items-center text-schoolRed font-bold text-2xl w-full md:w-2/3 mx-auto my-32 h-auto space-y-20 md:space-y-0;
   }
 
   .iconBlock > a > div {
