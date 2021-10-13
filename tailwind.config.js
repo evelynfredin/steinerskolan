@@ -15,6 +15,7 @@ module.exports = {
         contrast: "#F8F4ED",
         schoolRed: "#821F00",
         softGreen: "#D7EAD8",
+        lighterGreen: "#AFD4B0",
       },
       backgroundImage: {
         "footer-bg":

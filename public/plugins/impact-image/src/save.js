@@ -11,10 +11,10 @@ divsToUpdate.forEach(function (div) {
 
 function ImgBlock(props) {
   return (
-    <div className="relative flex justify-center">
-      <img src={props.imageUrl} alt="Kid reading book under a tree" />
+    <div className="relative flex justify-center w-full">
+      <img src={props.imageUrl} alt={props.imageAlt} />
       <div className="absolute -bottom-10 bg-secondaryBtn flex justify-center w-[267px] h-[64px]">
-        <p className="py-3 text-schoolRed waldorf text-center text-2xl font-bold">
+        <p className="py-3 text-lighterGreen waldorf text-center text-2xl font-bold">
           {props.title}
         </p>
       </div>

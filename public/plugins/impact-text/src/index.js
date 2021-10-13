@@ -29,7 +29,7 @@ function EditComponent(props) {
   return (
     <section className="py-32">
       <div className="px-10 md:px-0 md:w-3/6 mx-auto">
-        <h3 className="text-center text-2xl impactText">
+        <h3 className="text-center text-2xl font-normal lg:text-4xl lg:font-black impactText">
           <RichText
             value={props.attributes.showImpactText}
             onChange={updateImpactText}

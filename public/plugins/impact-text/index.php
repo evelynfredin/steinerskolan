@@ -31,9 +31,9 @@ class ImpactText
             wp_enqueue_script('impactTextSave', plugin_dir_url(__FILE__) . 'build/save.js', array('wp-element'));
         }
         ob_start(); ?>
-        <section class="py-32">
+        <section class="py-32 lg:py-44">
             <div class="px-10 md:px-0 md:w-3/6 mx-auto">
-                <h3 class="text-center text-2xl impactText">
+                <h3 class="text-center text-schoolGreen text-2xl font-normal lg:text-4xl lg:font-black impactText">
                     <pre class="hidden">
                         <?= wp_json_encode($attributes) ?>
                     </pre>
