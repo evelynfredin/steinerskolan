@@ -8,6 +8,8 @@ plugins/*
 !plugins/impact-image-wrapper
 !plugins/quick-icons
 !plugins/food-block
+!plugins/image-cover-block
+
 upgrade
 uploads
 wordpress
