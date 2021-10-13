@@ -130,11 +130,11 @@ function EditComponent(props) {
   }
 
   return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("section", {
-    class: "py-32"
+    className: "py-32"
   }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
-    class: "px-10 md:px-0 md:w-3/6 mx-auto"
+    className: "px-10 md:px-0 md:w-3/6 mx-auto"
   }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("h3", {
-    class: "text-center text-2xl impactText"
+    className: "text-center text-2xl font-normal lg:text-4xl lg:font-black impactText"
   }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__["RichText"], {
     value: props.attributes.showImpactText,
     onChange: updateImpactText

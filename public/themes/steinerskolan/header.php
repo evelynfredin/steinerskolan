@@ -51,7 +51,7 @@
                     <?php endforeach; ?>
 
                 </ul>
-                <ul class="flex flex-col items-center mt-6 lg:mt-0 space-y-5 lg:space-y-0 lg:flex-row lg:space-x-8 lg:ml-5 text-2xl font-bold lg:font-normal lg:text-base">
+                <ul class="flex flex-col items-center mt-6 lg:mt-0 space-y-5 lg:space-y-0 lg:flex-row lg:space-x-8 lg:ml-3 text-2xl font-bold lg:font-normal lg:text-base">
                     <li class="hidden lg:block font-bold">Sv</li>
                     <li class="block lg:hidden navItem p-3">Hitta Hit</li>
                     <li class="block lg:hidden navItem p-3">Språk</li>

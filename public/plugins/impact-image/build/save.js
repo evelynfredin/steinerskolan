@@ -125,14 +125,14 @@ divsToUpdate.forEach(function (div) {
 
 function ImgBlock(props) {
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "relative flex justify-center"
+    className: "relative flex justify-center w-full"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
     src: props.imageUrl,
-    alt: "Kid reading book under a tree"
+    alt: props.imageAlt
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "absolute -bottom-10 bg-secondaryBtn flex justify-center w-[267px] h-[64px]"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
-    className: "py-3 text-schoolRed waldorf text-center text-2xl font-bold"
+    className: "py-3 text-lighterGreen waldorf text-center text-2xl font-bold"
   }, props.title)));
 }
 }();
