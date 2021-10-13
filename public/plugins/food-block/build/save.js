@@ -178,7 +178,7 @@ function FoodBlock() {
   }, "Meny")))))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "w-full lg:w-1/2 flex justify-center lg:justify-end"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
-    src: "http://localhost:8000/uploads/2021/10/mat3.png",
+    src: "http://159.89.96.200/wp-content/uploads/2021/10/mat3.png",
     alt: "Mat p\xE5 Rudolf Steinerskolan",
     className: "w-full h-auto lg:w-[580px]"
   })))));
