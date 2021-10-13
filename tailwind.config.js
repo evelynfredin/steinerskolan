@@ -17,6 +17,7 @@ module.exports = {
         softGreen: "#D7EAD8",
         lighterGreen: "#AFD4B0",
         schoolRed: "#D5866D",
+        anotherGreen: "#002C07",
       },
       backgroundImage: {
         "footer-bg":
@@ -25,6 +26,8 @@ module.exports = {
           "url('http://159.89.96.200/wp-content/themes/steinerskolan/assets/img/mainBtn.svg')",
         secondaryBtn:
           "url('http://159.89.96.200/wp-content/themes/steinerskolan/assets/img/secondaryBtn.svg')",
+        thirdBtn:
+          "url('http://159.89.96.200/wp-content/themes/steinerskolan/assets/img/thirdBtn.svg')",
         menuOverlay:
           "url('http://159.89.96.200/wp-content/themes/steinerskolan/assets/img/menuOverlay.png')",
       },

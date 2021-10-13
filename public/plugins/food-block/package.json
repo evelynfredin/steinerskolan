@@ -1,0 +1,16 @@
+{
+  "name": "food-block",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "wp-scripts build src/index.js src/save.js",
+    "start": "wp-scripts start src/index.js src/save.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@wordpress/scripts": "^18.1.0"
+  }
+}
