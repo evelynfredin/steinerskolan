@@ -3,9 +3,9 @@
 <main role="main">
 
     <section class="w-screen bg-highlight flex lg:items-center welcome">
-        <div class="container px-5 mx-auto h-full lg:px-32 flex flex-col justify-center overflow-hidden">
-            <div class="flex lg:w-4/5 text-right place-self-center lg:place-self-end mb-10 lg:mb-0">
-                <img src="http://159.89.96.200/wp-content/themes/steinerskolan/assets/img/home-min.png" class="w-full h-auto lazyload" alt="Rudolf Steinerskolan i Göteborg">
+        <div class="container px-5 mx-auto h-full lg:w-[780px] flex flex-col justify-center overflow-hidden">
+            <div class="flex text-right place-self-center lg:place-self-end mb-10 lg:mb-0">
+                <img src="http://159.89.96.200/wp-content/themes/steinerskolan/assets/img/home-min2.png" class="w-full h-auto lazyload" alt="Rudolf Steinerskolan i Göteborg">
             </div>
             <div class="w-full">
                 <?php if (get_field('hero_heading', 'option')) : ?>
@@ -13,8 +13,8 @@
                         <?php the_field('hero_heading', 'option'); ?>
                     </p>
                 <?php else : ?>
-                    <p class="text-2xl waldorf text-contrast font-black mb-8">
-                        Välkommen till </br> <span class="text-4xl">Rudolf Steinerskolan</span>
+                    <p class="text-lg md:text-2xl waldorf text-contrast font-black mb-8">
+                        Välkommen till </br> <span class="text-2xl md:text-4xl">Rudolf Steinerskolan</span>
                     </p>
                 <?php endif; ?>
                 <a href="<?php the_field('hero_content_button_link', 'option'); ?>" rel="noopener noreferrer" aria-label="Ansök" title="Ansök">
