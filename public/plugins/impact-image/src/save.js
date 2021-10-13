@@ -20,7 +20,7 @@ function ImgBlock(props) {
         <img src={props.imageUrl} alt={props.imageAlt} />
       </a>
       <div className="absolute -bottom-10 bg-secondaryBtn flex justify-center w-[267px] h-[64px]">
-        <p className="py-3 text-lighterGreen waldorf text-center text-2xl font-bold">
+        <p className="py-3 text-softGreen waldorf text-center text-2xl font-bold">
           {props.title}
         </p>
       </div>
