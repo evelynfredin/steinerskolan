@@ -93,7 +93,7 @@ function FoodBlock() {
           </div>
           <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
             <img
-              src="http://localhost:8000/uploads/2021/10/mat3.png"
+              src="http://159.89.96.200/wp-content/uploads/2021/10/mat3.png"
               alt="Mat på Rudolf Steinerskolan"
               className="w-full h-auto lg:w-[580px]"
             />
