@@ -81,7 +81,7 @@ registerBlockType("create-block/image-cover-block", {
 
 		return (
 			<main className="main">
-				<div className="block-container">
+				<div className="container">
 					<div className="thumbnail">
 						<img src={image} />
 						<h2 className="title waldorf">{title}</h2>

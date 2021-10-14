@@ -179,7 +179,7 @@ __webpack_require__.r(__webpack_exports__);
     return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("main", {
       className: "main"
     }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-      className: "block-container"
+      className: "container"
     }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "thumbnail"
     }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
