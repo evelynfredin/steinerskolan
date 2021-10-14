@@ -10,7 +10,6 @@
 	border-bottom: 2px solid #0f3a00;
 	border-left: 2px solid #0f3a00;
 	border-right: 2px solid #0f3a00;
-
 	padding: 35px 20px;
 	width: 375px;
 }
@@ -24,8 +23,8 @@
 	width: screen;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: flex-start;
+	justify-content: flex-start;
+	align-items: center;
 }
 .container {
 	display: flex;
