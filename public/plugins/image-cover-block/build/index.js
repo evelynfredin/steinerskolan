@@ -196,7 +196,7 @@ __webpack_require__.r(__webpack_exports__);
       "stroke-width": "2",
       d: "M19 9l-7 7-7-7"
     }))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-      className: " \"body-container\" ".concat(visible ? "block" : "hidden")
+      className: " body-container ".concat(visible ? "block" : "hidden")
     }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText.Content, {
       className: "body",
       tagName: "p",

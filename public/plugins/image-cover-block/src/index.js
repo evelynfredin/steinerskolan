@@ -101,7 +101,7 @@ registerBlockType("create-block/image-cover-block", {
 							/>
 						</svg>
 					</div>
-					<div className={` "body-container" ${visible ? "block" : "hidden"}`}>
+					<div className={` body-container ${visible ? "block" : "hidden"}`}>
 						<RichText.Content className="body" tagName="p" value={body} />
 					</div>
 				</div>

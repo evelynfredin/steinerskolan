@@ -57,6 +57,8 @@
 
 <script src="<?= get_theme_file_uri('assets/script.js') ?>" async defer></script>
 <script src="<?= get_theme_file_uri('assets/lazysizes.min.js') ?>" async defer></script>
+<script src="<?= get_theme_file_uri('assets/image-cover-script.js') ?>" async defer></script>
+
 
 </body>
 
