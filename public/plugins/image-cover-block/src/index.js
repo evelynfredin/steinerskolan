@@ -80,8 +80,8 @@ registerBlockType("create-block/image-cover-block", {
 		const { title, image, body, visible } = attributes;
 
 		return (
-			<main>
-				<div className="container">
+			<main className="main">
+				<div className="block-container">
 					<div className="thumbnail">
 						<img src={image} />
 						<h2 className="title waldorf">{title}</h2>
