@@ -29,9 +29,10 @@ main {
 .container {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	justify-content: flex-start;
+	align-items: flex-start;
 	max-width: 375px;
+	margin-bottom: 5rem;
 }
 
 .title {
@@ -42,7 +43,6 @@ main {
 .thumbnail {
 	position: relative;
 	border: 2px solid #0f3a00;
-
 	width: 375px;
 	height: 256px;
 	display: flex;
