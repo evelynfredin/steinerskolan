@@ -22,7 +22,7 @@
   color: #0f3a00;
 }
 
-main {
+.main {
   width: screen;
   display: flex;
   flex-direction: column;
@@ -30,7 +30,7 @@ main {
   align-items: flex-start;
 }
 
-.container {
+.block-container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -72,7 +72,7 @@ main {
 }
 
 @media only screen and (min-width: 760px) {
-  main {
+  .main {
     margin: 2vw 10px;
   }
 }
