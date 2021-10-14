@@ -7,7 +7,12 @@
 }
 
 .body-container {
-	border: #0f3a00 2px;
+	border-bottom: 2px solid #0f3a00;
+	border-left: 2px solid #0f3a00;
+	border-right: 2px solid #0f3a00;
+
+	padding: 30px 20px;
+	width: 375px;
 }
 
 .body {
@@ -36,7 +41,8 @@ main {
 }
 .thumbnail {
 	position: relative;
-	border: #0f3a00 2px;
+	border: 2px solid #0f3a00;
+
 	width: 375px;
 	height: 256px;
 	display: flex;
